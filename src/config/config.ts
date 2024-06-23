@@ -6,6 +6,7 @@ const _config={
     port: process.env.PORT,
     dburi: process.env.MONGOURI,
     env: process.env.Node_ENV,
+    jwtsecret: process.env.JWT_SECRET
 }
 
 export const config = Object.freeze(_config); //by using Object.freeze() we can make sure that the object is immutable. This means that we can't change the properties of the object after it has been created. This is a good practice to ensure that the configuration object is not accidentally modified during runtime.
