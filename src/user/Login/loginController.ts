@@ -16,7 +16,6 @@ const loginUser = async (req: Request, res: Response, next:NextFunction) => {
         const error = createHttpError(404, "User not found");
         return next(error);
     }
-
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
         const error = createHttpError(400, "Invalid credentials");

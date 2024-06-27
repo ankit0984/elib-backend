@@ -69,7 +69,6 @@ const createUser = async (
 
         // Generate JWT token
         const token = sign({ sub: newUser._id }, config.jwtsecret as string, { expiresIn: "1h" });
-
         // Send response
         res.status(201).json({ message: "User created successfully"});
     } catch (err) {

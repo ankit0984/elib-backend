@@ -15,7 +15,7 @@ const createBook = async (req: Request, res: Response, next: NextFunction) => {
     const fileName = files.coverImage[0].filename;
     const filePath = path.resolve(
         __dirname,
-        "../../public/data/uploads",
+        "../../../public/data/uploads",
         fileName
     );
 
@@ -29,7 +29,7 @@ const createBook = async (req: Request, res: Response, next: NextFunction) => {
         const bookFileName = files.file[0].filename;
         const bookFilePath = path.resolve(
             __dirname,
-            "../../public/data/uploads",
+            "../../../public/data/uploads",
             bookFileName
         );
 
