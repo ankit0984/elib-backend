@@ -48,7 +48,5 @@ bookRouter.get('/bookdb', listBooks);
 // New route for getting books by title and/or category
 bookRouter.get('/bookdb/search', getSingleBook);
 
-// Keep the existing route for getting a book by ID if needed
-bookRouter.get('/bookdb/:bookId', getSingleBook);
 
 export default bookRouter;
