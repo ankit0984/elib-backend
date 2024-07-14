@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.ts"
+    "dev": "nodemon server.ts",
+    "start": "ts-node server.ts",
+    "docker:publish": "docker build -t ankit0984/elib-backend:v0.1 --platform linux/amd64 && docker push ankit0984/elib-backend:v0.1"
   },
   "author": "ak",
   "license": "ISC",
