@@ -1,7 +1,3 @@
-
-
-
-
 // export default bookRouter;
 import Router from "express";
 import { updateBook } from "./updateDetails/updateBookController";
